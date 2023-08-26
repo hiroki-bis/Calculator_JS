@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <script src="calculator.js" defer></script>
+    <title>Study</title>
+</head>
+<body>
+  <!-- <div class = "sankaku" ></div> -->
+  <div class = "container">
+	<table>
+		<div id="result" class="result" name="result" style="text-align: right">0</div>
+
+		<tr>
+			<td><input id="buttonClear" type="button" class="buttonLine4" value="C" onclick="clickClear()"></td>
+			<td><input id="buttonClear" type="button" class="buttonLine4" value="CE" onclick="clickClear()"></td>
+			<td><input id="buttonClear" type="button" class="buttonLine4" value="BS" onclick="clickBs()"></td>
+			<td><input id="buttonClear" type="button" class="operator" value="÷" onclick="clickCulc('/')"></td>
+		</tr>
+		<tr>
+			<td><input id="button7" type="button" class="buttonLine3" value="7" onclick="clickButton(7)"></td>
+			<td><input id="button8" type="button" class="buttonLine3" value="8" onclick="clickButton(8)"></td>
+			<td><input id="button9" type="button" class="buttonLine3" value="9" onclick="clickButton(9)"></td>
+			<td><input id="buttonMult" type="button" class="operator" value="×" onclick="clickCulc('*')"></td>
+		</tr>
+		<tr>
+			<td><input id="button4" type="button" class="buttonLine2" value="4" onclick="clickButton(4)"></td>
+			<td><input id="button5" type="button" class="buttonLine2" value="5" onclick="clickButton(5)"></td>
+			<td><input id="button6" type="button" class="buttonLine2" value="6" onclick="clickButton(6)"></td>
+			<td><input id="buttonSubt" type="button" class="operator" value="-" onclick="clickCulc('-')"></td>
+		</tr>
+		<tr>
+			<td><input id="button1" type="button" class="buttonLine1" value="1" onclick="clickButton(1)"></td>
+			<td><input id="button2" type="button" class="buttonLine1" value="2" onclick="clickButton(2)"></td>
+			<td><input id="button3" type="button" class="buttonLine1" value="3" onclick="clickButton(3)"></td>
+			<td><input id="buttonAdd" type="button" class="operator" value="+" onclick="clickCulc('+')"></td>
+		</tr>
+		<tr>
+			<td><input id="buttonMi" type="button" class="check_lb" value="±" onclick="clickButtonMi()"></td>
+			<td><input id="button0" type="button" class="check_lb" value="0" onclick="clickButton(0)"></td>
+			<td><input id="buttonDot" type="button" class="check_lb" value="." onclick="clickButton(0.)"></td>
+			<td><input id="buttonEq" type="button" class="equal" value="=" onclick="clickEq()"></td>
+		</tr>
+	</table>
+  </div>
+
+</body>
+</html>

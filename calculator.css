@@ -1,0 +1,107 @@
+/*クラスに対する指定*/
+.container {
+  width: 340px;
+  margin: 50px auto;
+  border: 2px solid black;
+  border-radius: 5%;
+  /* border: none; */
+}
+
+/*要素に対する指定*/
+table {
+  /* 電卓のサイズ */
+  width: 300px;
+  height: 400px;
+  /* 電卓が浮き出るように影を付ける */
+  border: solid 1px #dcdcdca4;
+  border-right: solid 4px #dcdcdca4;/* テーブルの右の線を太く灰色にすることで影を演出 */
+  border-bottom: solid 4px #dcdcdca4;/* テーブルの下の線を太く灰色にすることで影を演出 */
+  border-radius: 10px;/* テーブルの線を丸くする */
+  /* インライン要素を中央に配置(テーブルの要素を中央よせに) */
+  text-align: center;
+  /* 余白調整 */
+  padding: 8px;/* 要素の内側の余白 */
+  margin: 10px;/* 要素の外側の余白 */
+}
+
+/*idに対する指定*/
+#result {
+  width: 320px;
+  height: 70px;
+  /*文字の上下にどのクリア空けるか*/
+  line-height: 65px;
+  text-align: right;
+  font-size: 50px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5%;
+  border-top:5px solid #dcdcdca4;
+  border-bottom:5px solid #dcdcdca4;
+  border-left:6px solid #b6b6b6;
+  border-right:6px solid #b6b6b6;
+  box-sizing: border-box;
+}
+
+/*要素に対する指定*/
+input {
+  width:70px;
+  height: 70px;
+   /* ボタンの文字サイズ */
+   font-size: x-large;
+   /* 数字部分の背景色 */
+   background-color: #dcdcdca4;
+   /* ボタンの詳細設定 */
+   border: none;
+   border-radius: 20px;
+   /* クリック時の黒枠を消す */
+   outline: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+ /* 演算子の背景色を上書きで設定 */
+ .operator {
+  background-color: #87cefa;
+}
+
+/* 記号＝の部分の背景色を上書きで設定 */
+.equal {
+  background-color: #b6b6b6;
+}
+
+   /* カーソルを上に乗せた時に色を濃くする */
+   input:hover {/* hoverは疑似クラス */
+    background: #747373b9;
+  }
+
+  .result:hover {/* hoverは疑似クラス */
+    background: #ffffff; /* ディスプレイ部分は無効化 */
+  }
+
+  /* 演算子部分は別の色で上書き */
+  .operator:hover { /* hoverは疑似クラス */
+    background: #339cdd;
+  }
+
+   /* クリック時に色を濃くする */
+  input:active {/* activeは疑似クラス */
+    background:  #5a5a5a;
+  }
+  /* クリック時に色を濃くする */
+  .operator:active {/* activeは疑似クラス */
+    background: #2c80b4;
+  }
+
+  .sankaku{
+    width: 0;
+    height: 0;
+    border: 80px solid transparent;
+    border-top: 80px solid #2c80b4;
+    border-radius: 100%;
+}
